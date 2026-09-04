@@ -1,0 +1,4 @@
+/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles/graphic1.dir
+/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles/exer.dir
+/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles/edit_cache.dir
+/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles/rebuild_cache.dir
