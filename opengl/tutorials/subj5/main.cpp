@@ -1,12 +1,12 @@
 #include "include/glad/glad.h"
 #include <GLFW/glfw3.h>
+#include <glm/ext/matrix_clip_space.hpp>
 #include <glm/ext/matrix_float4x4.hpp>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/vector_float3.hpp>
 #include <glm/ext/vector_float4.hpp>
 #include <glm/trigonometric.hpp>
 #include <iostream>
-#include <cmath>
 #include "shaders.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -23,13 +23,47 @@ void configureglfw();
 
 
 
-constexpr float vertices[] = {
-    // positions          // colors           // texture coords
-        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
-         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
-        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
-        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left 
-};
+constexpr float vertices[]{-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+     0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
+     0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+     0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+    -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+
+    -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+     0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+     0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+     0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+    -0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
+    -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+
+    -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+    -0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+    -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+    -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+     0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+     0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+     0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+     0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+     0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+     0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+    -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+     0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
+     0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+     0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+    -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+    -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+
+    -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+     0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+     0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+     0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+    -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
+    -0.5f,  0.5f, -0.5f,  0.0f, 1.0f} ;
 
 constexpr unsigned int indices[] = {  
         0, 1, 3, // first triangle
@@ -37,11 +71,24 @@ constexpr unsigned int indices[] = {
 };
 
 
+glm::vec3 cubePositions[] = {
+    glm::vec3( 0.0f,  0.0f,  0.0f), 
+    glm::vec3( 2.0f,  5.0f, -15.0f), 
+    glm::vec3(-1.5f, -2.2f, -2.5f),  
+    glm::vec3(-3.8f, -2.0f, -12.3f),  
+    glm::vec3( 2.4f, -0.4f, -3.5f),  
+    glm::vec3(-1.7f,  3.0f, -7.5f),  
+    glm::vec3( 1.3f, -2.0f, -2.5f),  
+    glm::vec3( 1.5f,  2.0f, -2.5f), 
+    glm::vec3( 1.5f,  0.2f, -1.5f), 
+    glm::vec3(-1.3f,  1.0f, -1.5f)  
+};
+
 unsigned int VBO{0},VAO{0},EBO{0};
 int width{},height{},nrChannels;
 
 
-unsigned int texture;
+
 
 
 
@@ -67,7 +114,10 @@ glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
     std::cout<<"Failed to initialize  GLAD "<<std::endl;
     return -1;
-}   
+    }   
+
+    glEnable(GL_DEPTH_TEST);  
+
 
 
     Shader ourshader("../vertx.rt","../fregment.fs");
@@ -87,21 +137,19 @@ if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
 
     
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,
-        8*sizeof(float),(void*)0);
+        5*sizeof(float),(void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,
-        8*sizeof(float),(void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1,2,GL_FLOAT,GL_FALSE,
+        5 * sizeof(float)  ,(void *)(3 * sizeof(float) ));
     glEnableVertexAttribArray(1);
             
-    glVertexAttribPointer(2,2,GL_FLOAT, GL_FALSE,
-         8*sizeof(float),(void*)(6 *sizeof(float)));
-    glEnableVertexAttribArray(2);
 
 
 
     unsigned int texture,texture2;
     
+
     glGenTextures(1,&texture);
     //glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture);
@@ -116,6 +164,7 @@ if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
     stbi_set_flip_vertically_on_load(true);
     unsigned char *data= stbi_load("../container.jpg", &width, &height , 
         &nrChannels, 0);
+        
     if(data){
         glTexImage2D(GL_TEXTURE_2D, 0 , GL_RGB , width , height
              , 0 ,GL_RGB, GL_UNSIGNED_BYTE,data);
@@ -152,27 +201,27 @@ if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
     stbi_image_free(data);
 
 
-    glm::vec4 vec(1.0f,0.0f,0.0f,1.0f);
-    glm::mat4 trans=glm::mat4(1.0f);
-    trans = glm::translate(trans, glm::vec3(0.5f,-0.5f,0.0f));
-    trans = glm::rotate(trans, (float)glfwGetTime(),
-    glm::vec3(0.0f,0.0f,1.0f));
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::rotate(model,   glm::radians(50.0f),
+    glm::vec3(1.0f,0.5f,0.0f));
 
-    /*trans = glm::rotate(trans, glm::radians(90.0f),
-    glm::vec3(0.0,0.0,1.0));
-    trans=glm::scale(trans, glm::vec3(0.5,0.5,0.5));
-    std::cout<<vec.x<<vec.y<<vec.z<<std::endl;*/
+    glm::mat4 view = glm::mat4(1.0f);
+    view = glm::translate(view,glm::vec3(0.0f,0.0f,-3.0f));
+
+    glm::mat4 projection;
+    projection = glm::perspectiveRH(glm::radians(45.0f), 800.0f/600.0f, 0.1f, 
+    100.0f);
     
+    unsigned int modelLoc = glGetUniformLocation(ourshader.ID,"model");
+    unsigned int viewLoc = glGetUniformLocation(ourshader.ID,"view");
+  
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     ourshader.use();
-    glUniform1i(glGetUniformLocation(ourshader.ID,"ourTexture"),0);
+    ourshader.setInt("ourTexture",0);
     ourshader.setInt("ourTexture2", 1);
-    unsigned int transformLoc = glGetUniformLocation(ourshader.ID, "transfom");
-    glUniformMatrix4fv(transformLoc, 1, GL_FALSE,
-        glm::value_ptr(trans));
+    
 
-    float visvalue{0.0f};
 
 
     while(!glfwWindowShouldClose(window)){
@@ -180,7 +229,8 @@ if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
         processInput(window);
         
         glClearColor(0.2f,0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
         
         
         glActiveTexture(GL_TEXTURE0);
@@ -189,23 +239,32 @@ if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
         glBindTexture(GL_TEXTURE_2D , texture2);
 
         ourshader.use();
-        trans = glm::rotate(trans, (float)glfwGetTime(),
-    glm::vec3(0.0f,0.0f,1.0f));
+        //std::cout<<"glfw get time:"<<(float)glfwGetTime()  << std::endl;
+        //model = glm::rotate(model,(float)glfwGetTime() * glm::radians(55.0f),
+        //glm::vec3(1.0f,0.0f,0.0f));
 
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE,
-        glm::value_ptr(trans));
-
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
+        // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
+        ourshader.setMat4("projection", projection);
+        
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES,6 , GL_UNSIGNED_INT  , 0 );
-                
-         if(glfwGetKey(window, GLFW_KEY_UP)){
-            ourshader.setFloat("visibility",  visvalue+=0.08);
-            std::cout<<"up key pressed\n";
-        }else if(glfwGetKey(window, GLFW_KEY_DOWN)){
-            ourshader.setFloat("visibility",   visvalue-=0.08);
-            std::cout<<"down key pressed\n";
+        //glDrawElements(GL_TRIANGLES,6 , GL_UNSIGNED_INT  , 0 );
+        for(unsigned int i = 0; i < 10; i++)
+        {
+            glm::mat4 model = glm::mat4(1.0f);
+            model = glm::translate(model, cubePositions[i]);
+            float angle = 20.0f * i;
+            if(i%3==0)
+                angle*=glfwGetTime(); 
+            model = glm::rotate(model, glm::radians(angle), glm::vec3(
+                1.0f, 0.3f, 0.5f));
+            ourshader.setMat4("model", model);
+        
+            glDrawArrays(GL_TRIANGLES, 0, 36);
         }
-        //glDrawElements(GL_TRIANGLES, 6 ,GL_UNSIGNED_INT,0);
+        //glDrawArrays(GL_TRIANGLES, 0, 36);        
+
 
         glfwSwapBuffers(window);
         glfwPollEvents();

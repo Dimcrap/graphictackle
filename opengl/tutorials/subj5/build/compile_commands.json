@@ -1,38 +1,38 @@
 [
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/graphic1.dir/main.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/main.cpp",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/main.cpp",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/graphic1.dir/main.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/main.cpp",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/main.cpp",
   "output": "CMakeFiles/graphic1.dir/main.cpp.o"
 },
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/cc  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/graphic1.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/cc  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/graphic1.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c",
   "output": "CMakeFiles/graphic1.dir/src/glad.c.o"
 },
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/graphic1.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/graphic1.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp",
   "output": "CMakeFiles/graphic1.dir/shaders.cpp.o"
 },
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/exer.dir/exer2.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/exer.dir/exer2.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp",
   "output": "CMakeFiles/exer.dir/exer2.cpp.o"
 },
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/cc  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/exer.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/cc  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/exer.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c",
   "output": "CMakeFiles/exer.dir/src/glad.c.o"
 },
 {
-  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build",
-  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include  -o CMakeFiles/exer.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp",
-  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp",
+  "directory": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build",
+  "command": "/usr/bin/c++  -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include  -o CMakeFiles/exer.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp",
+  "file": "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp",
   "output": "CMakeFiles/exer.dir/shaders.cpp.o"
 }
 ]

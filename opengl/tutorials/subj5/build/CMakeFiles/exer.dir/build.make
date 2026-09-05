@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mamadreza/programming/graphic/opengl/tutorials/subj4
+CMAKE_SOURCE_DIR = /home/mamadreza/programming/graphic/opengl/tutorials/subj5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mamadreza/programming/graphic/opengl/tutorials/subj4/build
+CMAKE_BINARY_DIR = /home/mamadreza/programming/graphic/opengl/tutorials/subj5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exer.dir/depend.make
@@ -73,46 +73,46 @@ CMakeFiles/exer.dir/codegen:
 .PHONY : CMakeFiles/exer.dir/codegen
 
 CMakeFiles/exer.dir/exer2.cpp.o: CMakeFiles/exer.dir/flags.make
-CMakeFiles/exer.dir/exer2.cpp.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp
+CMakeFiles/exer.dir/exer2.cpp.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp
 CMakeFiles/exer.dir/exer2.cpp.o: CMakeFiles/exer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exer.dir/exer2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exer.dir/exer2.cpp.o -MF CMakeFiles/exer.dir/exer2.cpp.o.d -o CMakeFiles/exer.dir/exer2.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exer.dir/exer2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exer.dir/exer2.cpp.o -MF CMakeFiles/exer.dir/exer2.cpp.o.d -o CMakeFiles/exer.dir/exer2.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp
 
 CMakeFiles/exer.dir/exer2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exer.dir/exer2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp > CMakeFiles/exer.dir/exer2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp > CMakeFiles/exer.dir/exer2.cpp.i
 
 CMakeFiles/exer.dir/exer2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exer.dir/exer2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp -o CMakeFiles/exer.dir/exer2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp -o CMakeFiles/exer.dir/exer2.cpp.s
 
 CMakeFiles/exer.dir/src/glad.c.o: CMakeFiles/exer.dir/flags.make
-CMakeFiles/exer.dir/src/glad.c.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c
+CMakeFiles/exer.dir/src/glad.c.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c
 CMakeFiles/exer.dir/src/glad.c.o: CMakeFiles/exer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/exer.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/exer.dir/src/glad.c.o -MF CMakeFiles/exer.dir/src/glad.c.o.d -o CMakeFiles/exer.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/exer.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/exer.dir/src/glad.c.o -MF CMakeFiles/exer.dir/src/glad.c.o.d -o CMakeFiles/exer.dir/src/glad.c.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c
 
 CMakeFiles/exer.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/exer.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c > CMakeFiles/exer.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c > CMakeFiles/exer.dir/src/glad.c.i
 
 CMakeFiles/exer.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/exer.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c -o CMakeFiles/exer.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c -o CMakeFiles/exer.dir/src/glad.c.s
 
 CMakeFiles/exer.dir/shaders.cpp.o: CMakeFiles/exer.dir/flags.make
-CMakeFiles/exer.dir/shaders.cpp.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp
+CMakeFiles/exer.dir/shaders.cpp.o: /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp
 CMakeFiles/exer.dir/shaders.cpp.o: CMakeFiles/exer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exer.dir/shaders.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exer.dir/shaders.cpp.o -MF CMakeFiles/exer.dir/shaders.cpp.o.d -o CMakeFiles/exer.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exer.dir/shaders.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exer.dir/shaders.cpp.o -MF CMakeFiles/exer.dir/shaders.cpp.o.d -o CMakeFiles/exer.dir/shaders.cpp.o -c /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp
 
 CMakeFiles/exer.dir/shaders.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exer.dir/shaders.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp > CMakeFiles/exer.dir/shaders.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp > CMakeFiles/exer.dir/shaders.cpp.i
 
 CMakeFiles/exer.dir/shaders.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exer.dir/shaders.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp -o CMakeFiles/exer.dir/shaders.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp -o CMakeFiles/exer.dir/shaders.cpp.s
 
 # Object files for target exer
 exer_OBJECTS = \
@@ -130,7 +130,7 @@ exer: CMakeFiles/exer.dir/build.make
 exer: CMakeFiles/exer.dir/compiler_depend.ts
 exer: /usr/lib/libglfw.so
 exer: CMakeFiles/exer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable exer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mamadreza/programming/graphic/opengl/tutorials/subj5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable exer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/exer.dir/clean:
 .PHONY : CMakeFiles/exer.dir/clean
 
 CMakeFiles/exer.dir/depend:
-	cd /home/mamadreza/programming/graphic/opengl/tutorials/subj4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mamadreza/programming/graphic/opengl/tutorials/subj4 /home/mamadreza/programming/graphic/opengl/tutorials/subj4 /home/mamadreza/programming/graphic/opengl/tutorials/subj4/build /home/mamadreza/programming/graphic/opengl/tutorials/subj4/build /home/mamadreza/programming/graphic/opengl/tutorials/subj4/build/CMakeFiles/exer.dir/DependInfo.cmake "--color=$(COLOR)" exer
+	cd /home/mamadreza/programming/graphic/opengl/tutorials/subj5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mamadreza/programming/graphic/opengl/tutorials/subj5 /home/mamadreza/programming/graphic/opengl/tutorials/subj5 /home/mamadreza/programming/graphic/opengl/tutorials/subj5/build /home/mamadreza/programming/graphic/opengl/tutorials/subj5/build /home/mamadreza/programming/graphic/opengl/tutorials/subj5/build/CMakeFiles/exer.dir/DependInfo.cmake "--color=$(COLOR)" exer
 .PHONY : CMakeFiles/exer.dir/depend
 

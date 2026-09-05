@@ -1,8 +1,8 @@
 CMakeFiles/exer.dir/exer2.cpp.o: \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/exer2.cpp \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/exer2.cpp \
  /usr/include/stdc-predef.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/glad/glad.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/KHR/khrplatform.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/glad/glad.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -298,8 +298,8 @@ CMakeFiles/exer.dir/exer2.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/glad/glad.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/glad/glad.h \
  /usr/include/c++/16/fstream /usr/include/c++/16/bits/codecvt.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -358,7 +358,7 @@ CMakeFiles/exer.dir/exer2.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/16/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/stb_image.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/stb_image.h \
  /usr/include/c++/16/stdlib.h /usr/include/c++/16/math.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h \

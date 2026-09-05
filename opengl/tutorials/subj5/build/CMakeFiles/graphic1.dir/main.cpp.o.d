@@ -1,8 +1,8 @@
 CMakeFiles/graphic1.dir/main.cpp.o: \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/main.cpp \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/main.cpp \
  /usr/include/stdc-predef.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/glad/glad.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/KHR/khrplatform.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/glad/glad.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -14,20 +14,21 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
- /usr/include/glm/ext/matrix_float4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/c++/16/cassert \
+ /usr/include/glm/ext/matrix_clip_space.hpp \
+ /usr/include/glm/ext/scalar_constants.hpp \
+ /usr/include/glm/detail/setup.hpp /usr/include/c++/16/cassert \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/16/pstl/pstl_config.h /usr/include/assert.h \
  /usr/include/c++/16/cstddef /usr/include/c++/16/bits/version.h \
  /usr/include/glm/simd/platform.h /usr/include/c++/16/cstdint \
- /usr/include/c++/16/type_traits /usr/include/glm/detail/type_vec4.inl \
+ /usr/include/c++/16/type_traits \
+ /usr/include/glm/ext/scalar_constants.inl /usr/include/c++/16/limits \
+ /usr/include/glm/geometric.hpp /usr/include/glm/detail/type_vec3.hpp \
+ /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/detail/type_vec3.inl \
  /usr/include/glm/detail/compute_vector_relational.hpp \
- /usr/include/c++/16/limits \
  /usr/include/glm/detail/compute_vector_decl.hpp \
  /usr/include/c++/16/functional /usr/include/c++/16/bits/stl_function.h \
  /usr/include/c++/16/bits/move.h /usr/include/c++/16/concepts \
@@ -86,11 +87,63 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/array \
  /usr/include/c++/16/bits/binders.h \
  /usr/include/glm/detail/_vectorize.hpp \
- /usr/include/glm/detail/type_mat4x4.inl /usr/include/glm/matrix.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
- /usr/include/glm/ext/vector_bool2.hpp \
+ /usr/include/glm/detail/func_geometric.inl \
+ /usr/include/glm/exponential.hpp /usr/include/glm/detail/type_vec1.hpp \
+ /usr/include/glm/detail/type_vec1.inl \
  /usr/include/glm/detail/type_vec2.hpp \
  /usr/include/glm/detail/type_vec2.inl \
+ /usr/include/glm/detail/type_vec4.hpp \
+ /usr/include/glm/detail/type_vec4.inl /usr/include/c++/16/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/bits/flt-eval-method.h \
+ /usr/include/bits/fp-logb.h /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/16/bits/std_abs.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/16/bits/specfun.h \
+ /usr/include/c++/16/tr1/gamma.tcc \
+ /usr/include/c++/16/tr1/special_function_util.h \
+ /usr/include/c++/16/tr1/bessel_function.tcc \
+ /usr/include/c++/16/tr1/beta_function.tcc \
+ /usr/include/c++/16/tr1/ell_integral.tcc \
+ /usr/include/c++/16/tr1/exp_integral.tcc \
+ /usr/include/c++/16/tr1/hypergeometric.tcc \
+ /usr/include/c++/16/tr1/legendre_function.tcc \
+ /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/16/tr1/poly_hermite.tcc \
+ /usr/include/c++/16/tr1/poly_laguerre.tcc \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc \
+ /usr/include/glm/detail/func_exponential.inl \
+ /usr/include/glm/vector_relational.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/detail/func_vector_relational.inl \
+ /usr/include/glm/common.hpp /usr/include/glm/detail/_fixes.hpp \
+ /usr/include/glm/detail/func_common.inl \
+ /usr/include/glm/detail/compute_common.hpp \
+ /usr/include/glm/trigonometric.hpp \
+ /usr/include/glm/detail/func_trigonometric.inl \
+ /usr/include/glm/ext/matrix_clip_space.inl \
+ /usr/include/glm/ext/matrix_float4x4.hpp \
+ /usr/include/glm/detail/type_mat4x4.hpp \
+ /usr/include/glm/detail/type_mat4x4.inl /usr/include/glm/matrix.hpp \
+ /usr/include/glm/vec2.hpp /usr/include/glm/ext/vector_bool2.hpp \
  /usr/include/glm/ext/vector_bool2_precision.hpp \
  /usr/include/glm/ext/vector_float2.hpp \
  /usr/include/glm/ext/vector_float2_precision.hpp \
@@ -99,12 +152,10 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_int2.hpp \
  /usr/include/glm/ext/vector_int2_sized.hpp \
  /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
+ /usr/include/glm/ext/vector_uint2.hpp \
  /usr/include/glm/ext/vector_uint2_sized.hpp \
  /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/glm/vec3.hpp \
  /usr/include/glm/ext/vector_bool3.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl \
  /usr/include/glm/ext/vector_bool3_precision.hpp \
  /usr/include/glm/ext/vector_float3.hpp \
  /usr/include/glm/ext/vector_float3_precision.hpp \
@@ -150,51 +201,7 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/glm/ext/matrix_float3x2_precision.hpp \
  /usr/include/glm/mat3x3.hpp /usr/include/glm/ext/matrix_double3x3.hpp \
  /usr/include/glm/detail/type_mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.inl /usr/include/glm/common.hpp \
- /usr/include/glm/detail/_fixes.hpp /usr/include/c++/16/cmath \
- /usr/include/math.h /usr/include/bits/math-vector.h \
- /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/bits/flt-eval-method.h \
- /usr/include/bits/fp-logb.h /usr/include/bits/fp-fast.h \
- /usr/include/bits/mathcalls-macros.h \
- /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/16/bits/std_abs.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
- /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/types/struct_timespec.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h \
- /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/16/bits/specfun.h \
- /usr/include/c++/16/tr1/gamma.tcc \
- /usr/include/c++/16/tr1/special_function_util.h \
- /usr/include/c++/16/tr1/bessel_function.tcc \
- /usr/include/c++/16/tr1/beta_function.tcc \
- /usr/include/c++/16/tr1/ell_integral.tcc \
- /usr/include/c++/16/tr1/exp_integral.tcc \
- /usr/include/c++/16/tr1/hypergeometric.tcc \
- /usr/include/c++/16/tr1/legendre_function.tcc \
- /usr/include/c++/16/tr1/modified_bessel_func.tcc \
- /usr/include/c++/16/tr1/poly_hermite.tcc \
- /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/func_common.inl \
- /usr/include/glm/vector_relational.hpp \
- /usr/include/glm/detail/func_vector_relational.inl \
- /usr/include/glm/detail/compute_common.hpp \
- /usr/include/glm/detail/type_vec1.hpp \
- /usr/include/glm/detail/type_vec1.inl \
+ /usr/include/glm/detail/type_mat3x3.inl \
  /usr/include/glm/ext/matrix_double3x3_precision.hpp \
  /usr/include/glm/ext/matrix_float3x3.hpp \
  /usr/include/glm/ext/matrix_float3x3_precision.hpp \
@@ -219,16 +226,9 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/glm/mat4x4.hpp /usr/include/glm/ext/matrix_double4x4.hpp \
  /usr/include/glm/ext/matrix_double4x4_precision.hpp \
  /usr/include/glm/ext/matrix_float4x4_precision.hpp \
- /usr/include/glm/detail/func_matrix.inl /usr/include/glm/geometric.hpp \
- /usr/include/glm/detail/func_geometric.inl \
- /usr/include/glm/exponential.hpp \
- /usr/include/glm/detail/func_exponential.inl \
+ /usr/include/glm/detail/func_matrix.inl \
  /usr/include/glm/ext/matrix_transform.hpp \
- /usr/include/glm/gtc/constants.hpp \
- /usr/include/glm/ext/scalar_constants.hpp \
- /usr/include/glm/ext/scalar_constants.inl \
- /usr/include/glm/gtc/constants.inl /usr/include/glm/trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.inl \
+ /usr/include/glm/gtc/constants.hpp /usr/include/glm/gtc/constants.inl \
  /usr/include/glm/ext/matrix_transform.inl /usr/include/c++/16/iostream \
  /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream.h \
  /usr/include/c++/16/ios /usr/include/c++/16/iosfwd \
@@ -298,8 +298,8 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.h \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/include/glad/glad.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/include/glad/glad.h \
  /usr/include/c++/16/fstream /usr/include/c++/16/bits/codecvt.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -321,8 +321,6 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
  /usr/include/glm/ext/matrix_projection.inl \
- /usr/include/glm/ext/matrix_clip_space.hpp \
- /usr/include/glm/ext/matrix_clip_space.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
  /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/quaternion.hpp \
  /usr/include/glm/ext/vector_relational.hpp \
@@ -358,7 +356,7 @@ CMakeFiles/graphic1.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/16/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/mamadreza/programming/graphic/opengl/tutorials/subj4/stb_image.h \
+ /home/mamadreza/programming/graphic/opengl/tutorials/subj5/stb_image.h \
  /usr/include/c++/16/stdlib.h /usr/include/c++/16/math.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h \

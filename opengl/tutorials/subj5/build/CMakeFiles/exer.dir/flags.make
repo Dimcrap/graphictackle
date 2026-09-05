@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include
+C_INCLUDES = -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mamadreza/programming/graphic/opengl/tutorials/subj4/include
+CXX_INCLUDES = -I/home/mamadreza/programming/graphic/opengl/tutorials/subj5/include
 
 CXX_FLAGS = 
 

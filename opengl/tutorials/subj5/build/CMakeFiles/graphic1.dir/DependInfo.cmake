@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/src/glad.c" "CMakeFiles/graphic1.dir/src/glad.c.o" "gcc" "CMakeFiles/graphic1.dir/src/glad.c.o.d"
-  "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/main.cpp" "CMakeFiles/graphic1.dir/main.cpp.o" "gcc" "CMakeFiles/graphic1.dir/main.cpp.o.d"
-  "/home/mamadreza/programming/graphic/opengl/tutorials/subj4/shaders.cpp" "CMakeFiles/graphic1.dir/shaders.cpp.o" "gcc" "CMakeFiles/graphic1.dir/shaders.cpp.o.d"
+  "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/src/glad.c" "CMakeFiles/graphic1.dir/src/glad.c.o" "gcc" "CMakeFiles/graphic1.dir/src/glad.c.o.d"
+  "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/main.cpp" "CMakeFiles/graphic1.dir/main.cpp.o" "gcc" "CMakeFiles/graphic1.dir/main.cpp.o.d"
+  "/home/mamadreza/programming/graphic/opengl/tutorials/subj5/shaders.cpp" "CMakeFiles/graphic1.dir/shaders.cpp.o" "gcc" "CMakeFiles/graphic1.dir/shaders.cpp.o.d"
   "" "graphic1" "gcc" "CMakeFiles/graphic1.dir/link.d"
   )
 
